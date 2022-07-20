@@ -1,19 +1,40 @@
 # Tangelo Technical Test
 
-Instrucciones:
+Instructions:
 
-- Desarrolle una aplicación en python que genere la tabla anterior.
-- De https://restcountries.com/ obtenga el nombre del idioma que habla el país y encriptelo con SHA1 
-- En la columna Time ponga el tiempo que tardó en armar la fila (debe ser automático)
-- La tabla debe ser creada en un DataFrame con la librería PANDAS 
-- Con funciones de la librería pandas muestre el tiempo total, el tiempo promedio, el tiempo mínimo y el máximo que tardo en procesar todas las filas de la tabla
-- Guarde el resultado en sqlite
-- Genere un Json de la tabla creada y guárdelo como data.json
-- La prueba debe ser entregada en un repositorio git.
-
+- Make API request and get json (restcountries)
+- Process Json into DataFrame
+- Show time statistics
+- Create sqlite database from DataFrame
+- Create json from DataFrame
 
 ## Setup
-Instalar las librerias necesarias
+Install the librarys that exam needs
 ```
     pip install -r requirements.txt
+```
+
+## Execute Script
+You can execute the script directly by main.py
+```
+    python main.py
+```
+
+## Notebook
+Or you can use the notebook called main.ipynb
+```
+    [Notebook](https://github.com/angelrene45/exam_tangelo/blob/'main'/main.ipynb)
+```
+
+## Unittest
+You can execute all unittest with following command
+```
+    python -m unittest
+```
+You can execute every single unittest separately
+```
+    python -m unittest modules.test.test_functions.TestFunctionsExam.test_restcountries
+    python -m unittest modules.test.test_functions.TestFunctionsExam.test_word_encrypt
+    python -m unittest modules.test.test_functions.TestFunctionsExam.test_json_to_df
+    python -m unittest modules.test.test_functions.TestFunctionsExam.test_df_to_sqllite
 ```
