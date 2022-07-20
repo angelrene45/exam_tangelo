@@ -21,10 +21,8 @@ You can execute the script directly by main.py
 ```
 
 ## Notebook
-Or you can use the notebook called main.ipynb
-```
-    [Notebook](https://github.com/angelrene45/exam_tangelo/blob/'main'/main.ipynb)
-```
+Also you can use the notebook called [main.ipynb](https://github.com/angelrene45/exam_tangelo/blob/'main'/main.ipynb)
+
 
 ## Unittest
 You can execute all unittest with following command
